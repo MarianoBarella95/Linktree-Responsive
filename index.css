@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'titulo';
+    src: url(./Fuentes/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+body {
+    font-family: 'titulo';
+    color: 022050;
+    background: rgb(242,179,214);
+    background: linear-gradient(45deg, rgba(242,179,214,1) 0%, rgba(183,174,242,1) 75%);
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 400px;
+    border-radius: 15px;
+}
+
+.cabecera {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+/* border-radius: 16px; */
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 100%;
+}
+
+.foto {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+}
+
+.foto img {
+    width: 120px;
+    border-radius: 100%;
+    padding: 10px;
+    filter: drop-shadow(0 0 5px black);
+}
+
+.titulo {
+    width: 60%;
+}
+
+.titulo h1 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 800;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.descripcion {
+    margin-top: 15px;
+}
+
+.descripcion p {
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.links img {
+    width: 40px;
+}
+
+.linkedin {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding: 6px 4px;
+    border-radius: 10px;
+    background-color: FBF8CC;
+}
+
+.linkedin:hover {
+    box-shadow: 0 5px 15px rgba(251, 248, 204, 0.6);
+}
+
+.instagram {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding: 6px 4px;
+    border-radius: 10px;
+    background-color: FBF8CC;
+}
+
+.instagram:hover {
+    box-shadow: 0 5px 15px rgba(251, 248, 204, 0.6);
+}
+
+.facebook {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    padding: 6px 4px;
+    border-radius: 10px;
+    background-color: FBF8CC;
+}
+
+.facebook:hover {
+    box-shadow: 0 5px 15px rgba(251, 248, 204, 0.6);
+}
+
+@media (min-width: 1000px) {
+    body {
+        background-image: url(./Imágenes/FOTOS\ INSTAGRAM.jpg);
+        background-size: cover;
+    }
+    
+    .cabecera {
+        flex-direction: column;
+    }
+
+    .foto {
+        margin-top: 10px;
+    }
+}
